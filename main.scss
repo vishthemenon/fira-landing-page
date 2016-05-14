@@ -1,0 +1,86 @@
+// Typography
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,700italic,500italic,400italic,300italic);
+
+$title-size: 100px;
+$font-color: ;
+
+body {
+  font-family: 'Ubuntu';
+}
+
+h1,
+h2 {
+  color: $font-color;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: $title-size;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: $title-size*.7;
+}
+
+// Hero
+
+#hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+
+  >.fa-arrow-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -18.5px;
+    bottom: 30px;
+    opacity: 1;
+    display: none;
+    font-size: 40px;
+    -webkit-animation: blink 1.4s infinite;
+    -moz-animation: blink 1.4s infinite;
+    animation: blink 1.4s infinite;
+  }
+}
+
+#title {
+  transition:color 0.6s ease-in;
+}
+
+#subtitle {
+  display: none
+}
+
+// Section 2
+
+
+
+// Typed.js
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
