@@ -218,6 +218,8 @@ h4 {
   h3 {
     text-align: center;
     margin: 30px 0 30px;
+    font-size: $title-size*.4;
+    font-weight: 500;
     padding-bottom: 8px;
     width: 100%;
     // border-bottom: 1px solid #333;
@@ -231,6 +233,14 @@ h4 {
     display: flex;
   }
 
+  article {
+    border-right: 1px solid #eee;
+    &:last-child {
+      border-right: none;
+    }
+
+  }
+
   #reservation b {
     color: $blue;
   }
@@ -238,6 +248,8 @@ h4 {
   #review b {
     color: $red;
   }
+
+
 }
 
 
@@ -246,7 +258,32 @@ h4 {
   display: inline;
 }
 
+.third {
+  width: 33vw;
+  display: inline;
+  > img {
+    width: 20vw;
+  }
+}
+
+#signup {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: lighten($blue, 30);
+}
+
+
+
 // SignUp Form
+
+
 
 .signup-form {
   border: none;
@@ -258,23 +295,29 @@ h4 {
     text-align: center;
     border: none;
     border-radius: 5px;
-    line-height: 40px;
+    line-height: 50px;
     width: 300px;
     padding-left: 10px;
-    background: #ddd;
+    background: #eee;
     font-family: 'Raleway';
-    color: white;
+    color: #333;
+    &:hover {
+      background: darken(#eee, 10);
+    }
   }
 
   button {
     background: $blue;
     color: white;
     font-weight: 300;
-    line-height: 40px;
-    padding: 0 20px;
+    line-height: 50px;
+    padding: 0 30px;
     border: none;
     border-radius: 4px;
-    font-family: 'Raleway'
+    font-family: 'Raleway';
+    &:hover {
+      background: darken($blue, 10);
+    }
   }
 
 }
