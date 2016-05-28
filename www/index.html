@@ -4,15 +4,90 @@
     <meta charset="utf-8">
     <title>fira | Friendly Intelligent Robotic Assistant</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js" charset="utf-8"></script>
+    <link rel="shortcut icon" type="image/png" href="/images/smartbird.png?v=2"/>
     <script src="/js/typed.js" charset="utf-8"></script>
     <script src="/js/main.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" media="screen" title="Normalize" charset="utf-8">
-    <link rel="stylesheet" href="/main.css" media="screen" title="Main CSS" charset="utf-8">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/main.css" charset="utf-8">
   </head>
   <body>
     <section id="hero">
+      <img src="/images/smartbird.png" alt="" id="logo">
       <h1 id="title"><span id="typed"></span></h1>
-      <h2 id="subtitle">the way you do business</h2>
+      <h2 class="hero-show" id="subtitle">the way you do business</h2>
+      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+      <form class="signup-form hero-show" action="javascript:handleClick()" method="post">
+        <input type="email" name="email" placeholder="Enter your email to get beta invite">
+        <button type="submit" name="button">Sign Up</button>
+      </form>
+    </section>
+
+    <section id="bridge">
+      <h3>fira is an <b>intelligent assistant</b> that <b>engages your customers</b> and <b>handles mundane tasks</b> on your behalf so that you can <b>focus on your business</b></h3>
+    </section>
+
+    <section id="info1">
+      <img id="mockup1" src="/images/mockup1.png" alt="">
+      <img id="mockup2" src="/images/mockup2.png" alt="">
+      <h2>fira <b>loves</b> messenger</h2>
+      <h3>fira integrates seamlessly with Facebook's Messenger and Page.</h3>
+      <h4>When, a customer messages, your page, fira will respond immediately with personalised, natural replies. When in distress, fira will quickly notify the business owner.</h4>
+    </section>
+
+    <section id="info2">
+      <div>
+        <img id="smallbird" class="bird" src="/images/smallbird.png" alt="">
+        <img id="smartbird" class="bird" src="/images/smartbird.png" alt="">
+      </div>
+      <h2>fira <b>learns</b></h2>
+      <h3>It just keeps getting better!</h3>
+      <h4>On top of its Natural Language Parser(NLP), fira utilizes Machine Learning(ML) algorithms to learn from its conversations and your conversations with your customers. </h4>
+    </section>
+
+
+    <section id="info3">
+      <h2>Additional Modules</h1>
+      <div>
+      <article id="reservation" class="half">
+        <!-- <img id="mockup1" src="/images/re.png" alt=""> -->
+        <h3>fira takes <b>reservations</b></h3>
+        <h4>fira takes reservations from customers in <b>plain english</b>. Reservations are presented to owners through a <b>business-faceing user interface</b>.</h4>
+      </article>
+      <article id="review" class="half">
+        <!-- <img id="mockup1" src="/images/rev.png" alt=""> -->
+        <h3>fira handles <b>reviews</b></h3>
+        <h4>fira <b>prompts the customer</b> to leave a review after the reservation. A <b>sentimatal analysis</b> is conducted on the reviews and conversations to help owners identify <b>key areas of improvements</b>.</h4>
+      </article>
+    </div>
+    </section>
+
+    <section id="info3">
+      <h2>fira saves you</h2>
+      <div>
+      <article id="time" class="third">
+        <img src="/images/time.png" alt="">
+        <h3><b>time</b></h3>
+      </article>
+      <article id="manpower" class="third">
+        <img src="/images/manpower.png" alt="">
+        <h3><b>manpower</b></h3>
+      </article>
+      <article id="money" class="third">
+        <img src="/images/money.png" alt="">
+        <h3><b>money</b></h3>
+      </article>
+    </div>
+    </section>
+
+
+    <section id="signup">
+      <h2>Sign up for fira</h2>
+      <h3>Get access to fira - sign up to get a private beta invite</h3>
+      <form class="signup-form" onSubmit=" return handleClick()" method="post">
+        <input type="email" name="email" placeholder="Enter your email to get beta invite">
+        <button type="submit" name="Submit" name="button">Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
